@@ -15,16 +15,16 @@ def home():
 def health():
     return jsonify({
         "status": "healthy",
-        "application": "docker-flask-project"
+        "application": "k3s-flask-project"
     }), 200
 
 
 @app.route("/api/info")
 def application_info():
     return jsonify({
-        "application": "Docker Hands-On Demo",
+        "application": "K3s Flask Demo",
         "version": "1.0.0",
-        "environment": "Docker Lab",
+        "environment": "K3s Lab",
         "message": "Application is running successfully!",
         "timestamp": datetime.now(UTC).isoformat()
     }), 200
