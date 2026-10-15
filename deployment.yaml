@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k3s-flask-project
+  namespace: k3s-flask
   labels:
     app: k3s-flask-project
 spec:
@@ -16,7 +17,7 @@ spec:
     spec:
       containers:
         - name: flask-app
-          image: rohitkotla/k3s-flask-project:1.0.0
+          image: rohitkotla/k3s-flask-project:latest
           imagePullPolicy: Always
           ports:
             - name: http
