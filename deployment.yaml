@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: flask-app
-          image: rohitkotla/k3s-flask-project:build-21
+          image: rohitkotla/k3s-flask-project:build-22
           imagePullPolicy: Always
           ports:
             - name: http
